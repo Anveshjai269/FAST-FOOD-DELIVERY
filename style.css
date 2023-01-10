@@ -1,0 +1,254 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigaton bar */
+#navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 2000px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigaton bar: Logo and image */
+.logo {
+    margin: 34px 47px;
+}
+
+.logo img {
+    height: 48px;
+    margin: -17px -7px;
+    border-radius: 12px;
+
+}
+
+/* Navigaton bar: List and styling */
+#navbar ul {
+    display: flex;
+    margin: -34px 104px;
+    text-decoration: none;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 13px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 3px 22px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 230px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    top: 0px;
+    content: "";
+    background: url(img/back2.jpeg) no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    font-family: 'Bree Serif', serif;
+    color: black;
+    text-align: center;
+}
+
+#home p {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+    /* font-size: 1.5rem; */
+}
+
+/* services section */
+#services {
+    margin: 15px 35px;
+    display: flex;
+
+}
+
+#services .box {
+    background-color: gainsboro;
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 3px 14px;
+    border-radius: 25px;
+}
+
+#services .box img {
+    height: 130px;
+    width: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* clint section */
+#client-section {
+    height: 344px;
+}
+
+#client-section::before {
+    content: "";
+    background: url(img/back4.jpeg) no-repeat center center/cover;
+    position: absolute;
+    height: 39%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    margin: 65px 0px;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 46px;
+}
+
+.client-item img {
+    height: 120px;
+    margin: 28px;
+}
+
+/* contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background: url(img/contact1.jpeg) no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    bottom: -5px;
+    
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    /* font-size: 1.1rem; */
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3ram;
+}
+
+/* Utility classes */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.4rem;
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.2rem;
+    border-radius: 16px;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    background-color: coral;
+    color: black;
+    opacity: 0.8;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 240px;
+    padding: 7px 19px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;  
+    opacity: 0.8;
+} 
+.button:hover {
+    background-color: coral;
+    color: black;
+    opacity: 0.8;
+}
